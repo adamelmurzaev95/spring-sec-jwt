@@ -1,0 +1,8 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div class="container">
+    <h1>Assalamu alaykum</h1>
+    <p th:text="${user.getFirstName() + ' ' + user.getLastName()}">Text</p>
+    <form action="/auth/logout" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+</div>
